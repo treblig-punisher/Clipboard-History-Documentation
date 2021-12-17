@@ -18,7 +18,7 @@
 
 @-webkit-keyframes section-animation {
   from {
-    margin-left: -1000px;
+    margin-left: -3000px;
   }
   to {
     margin-left: 0;
@@ -27,7 +27,7 @@
 
 @keyframes section-animation {
   from {
-    margin-left: -1000px;
+    margin-left: -3000px;
   }
   to {
     margin-left: 0;
@@ -38,6 +38,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Lexend', sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -101,9 +102,12 @@ body {
   }
   section {
     margin-bottom: 100px;
-    margin-left: -1000px;
+  }
+  .main-section-wrapper {
     -webkit-animation-name: section-animation;
             animation-name: section-animation;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
     -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -154,6 +158,8 @@ body {
   }
   section {
     margin-bottom: 100px;
+  }
+  .main-section-wrapper {
     -webkit-animation-name: section-animation;
             animation-name: section-animation;
     -webkit-animation-duration: 1s;
@@ -162,6 +168,8 @@ body {
             animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
 }
 
