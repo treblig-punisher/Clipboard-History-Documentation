@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+.wrapper {
+  background: #070707;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  display: block;
+  margin-top: 80px;
+  position: relative;
+  background-image: url("/Clipboard_History_App_Name.png");
+  background-size: 400px;
+  width: 400px;
+  height: 400px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #9e3dee;
+}
+
+li {
+  color: #fd4cb9;
+  font-size: 1.4rem;
+}
+
+section {
+  margin-bottom: 100px;
+}

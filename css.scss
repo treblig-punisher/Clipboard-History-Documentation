@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+.wrapper{
+    background:  #070707;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo{
+    display:block;
+    margin-top: 80px;
+    position: relative;
+    background-image: url("/Clipboard_History_App_Name.png");
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    transform: scale(1.2);
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 2rem;
+    color: rgb(158, 61, 238);
+}
+
+li{
+    color: rgb(253, 76, 185);
+    font-size: 1.4rem;
+}
+
+section{
+    margin-bottom: 100px;
+}
