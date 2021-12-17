@@ -104,16 +104,17 @@ body {
     margin-bottom: 100px;
   }
   .main-section-wrapper {
-    -webkit-animation-name: section-animation;
-            animation-name: section-animation;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+    margin-left: -3000px;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
     -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
             animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-name: section-animation;
+            animation-name: section-animation;
   }
 }
 
@@ -160,16 +161,17 @@ body {
     margin-bottom: 100px;
   }
   .main-section-wrapper {
-    -webkit-animation-name: section-animation;
-            animation-name: section-animation;
+    margin-left: -3000px;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-name: section-animation;
+            animation-name: section-animation;
   }
 }
 

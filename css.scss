@@ -77,11 +77,12 @@ body{
 
     }
     .main-section-wrapper{
-        animation-name:  section-animation;
-        animation-play-state: paused;
+        margin-left: $startingSectionPosition;
+        animation-delay: 0.5s;
         animation-duration: 1s;
         animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
         animation-fill-mode: forwards;
+        animation-name: section-animation;
         
     }
 }
@@ -126,11 +127,13 @@ body{
 
     }
     .main-section-wrapper{
-        animation-name:  section-animation;
+        margin-left: $startingSectionPosition;
+        animation-delay: 0.5s;
         animation-duration: 1s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
         animation-fill-mode: forwards;
-        animation-play-state: paused;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-name: section-animation;
+        
     }
 }
 
