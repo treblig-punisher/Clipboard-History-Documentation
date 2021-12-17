@@ -23,11 +23,12 @@ body{
     margin: 0;
     font-family: 'Lexend', sans-serif;
     overflow-x: hidden;
+    background:  #070707;
     
 }
 
 .wrapper{
-    background:  #070707;
+    
     display: flex;
     position: relative;
     flex-direction: column;
@@ -35,6 +36,7 @@ body{
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 40px;
 }
 
 @media (max-width: 1000px)
@@ -45,7 +47,7 @@ body{
         margin-top: $startingPosition;
         position: relative;
         height: 400px;
-        transform: scale(0.7);
+        transform: scale(0.6);
         transition: transform 0.2s ease;
         animation-name:  logo-animation;
         animation-duration: .8s;
@@ -54,14 +56,14 @@ body{
     }
 
     h1{
-        font-size: 2rem;
+        font-size: 1rem;
         color: rgb(158, 61, 238);
         transition: font-size 0.2s ease;
     }
 
     li{
         color: rgb(253, 76, 185);
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         margin-bottom: 40px;
         line-height: 1.9rem;
         transition: font-size 0.2s ease, margin 0.2s ease;
@@ -69,33 +71,83 @@ body{
 
     section{
 
-        margin-bottom: 100px;
+        margin-bottom: 20px;
+        // font-size: 0.8rem;
 
     }
     .main-section-wrapper{
+        display: flex;
+        flex-direction: column;
+        
+        // flex-shrink: 2;
         margin-left: $startingSectionPosition;
         animation-delay: 0.5s;
         animation-duration: 1s;
         animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
         animation-fill-mode: forwards;
         animation-name: section-animation;
+        // transform: scale(0.8);
         
     }
 }
 
-@media (min-width: 1001px)
+@media (min-width: 1001px) and (max-width: 1920px)
 {
         
     .logo{
         display:block;
         margin-top: $startingPosition;
         position: relative;
-        // background-image: url("/Clipboard_History_App_Name.png");
-        // background-size: 400px;
         width: 400px;
-        // height: 400px;
         transform: scale(1.2);
-        // background-repeat: no-repeat;
+        transition: transform 0.2s ease;
+        margin-bottom: 100px;
+        animation-name:  logo-animation;
+        animation-duration: .8s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-fill-mode: forwards;
+    }
+
+    h1{
+        font-size: 3rem;
+        color: rgb(158, 61, 238);
+        transition: font-size 0.2s ease;
+    }
+
+    li{
+        color: rgb(253, 76, 185);
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+        transition: font-size 0.2s ease, margin 0.2s ease;
+    }
+
+    section{
+        margin-bottom: 100px;
+        
+
+    }
+    .main-section-wrapper{
+        position: relative;
+        margin-left: $startingSectionPosition;
+        left: 100px;
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-name: section-animation;
+        
+    }
+}
+
+@media (min-width: 1920px)
+{
+        
+    .logo{
+        display:block;
+        margin-top: $startingPosition;
+        position: relative;
+        width: 400px;
+        transform: scale(1.2);
         transition: transform 0.2s ease;
         margin-bottom: 100px;
         animation-name:  logo-animation;
@@ -132,6 +184,8 @@ body{
         
     }
 }
+
+
 
 strong{
     outline-style: solid;

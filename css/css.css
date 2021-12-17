@@ -39,10 +39,10 @@ body {
   margin: 0;
   font-family: 'Lexend', sans-serif;
   overflow-x: hidden;
+  background: #070707;
 }
 
 .wrapper {
-  background: #070707;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +59,7 @@ body {
           align-items: center;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 40px;
 }
 
 @media (max-width: 1000px) {
@@ -67,8 +68,8 @@ body {
     margin-top: -2000px;
     position: relative;
     height: 400px;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
@@ -83,23 +84,30 @@ body {
             animation-fill-mode: forwards;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #9e3dee;
     -webkit-transition: font-size 0.2s ease;
     transition: font-size 0.2s ease;
   }
   li {
     color: #fd4cb9;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin-bottom: 40px;
     line-height: 1.9rem;
     -webkit-transition: font-size 0.2s ease, margin 0.2s ease;
     transition: font-size 0.2s ease, margin 0.2s ease;
   }
   section {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   .main-section-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: -3000px;
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
@@ -114,7 +122,62 @@ body {
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1001px) and (max-width: 1920px) {
+  .logo {
+    display: block;
+    margin-top: -2000px;
+    position: relative;
+    width: 400px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    margin-bottom: 100px;
+    -webkit-animation-name: logo-animation;
+            animation-name: logo-animation;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #9e3dee;
+    -webkit-transition: font-size 0.2s ease;
+    transition: font-size 0.2s ease;
+  }
+  li {
+    color: #fd4cb9;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    -webkit-transition: font-size 0.2s ease, margin 0.2s ease;
+    transition: font-size 0.2s ease, margin 0.2s ease;
+  }
+  section {
+    margin-bottom: 100px;
+  }
+  .main-section-wrapper {
+    position: relative;
+    margin-left: -3000px;
+    left: 100px;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-name: section-animation;
+            animation-name: section-animation;
+  }
+}
+
+@media (min-width: 1920px) {
   .logo {
     display: block;
     margin-top: -2000px;
