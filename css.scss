@@ -44,12 +44,8 @@ body{
         display:block;
         margin-top: $startingPosition;
         position: relative;
-        // background-image: url("/Clipboard_History_App_Name.png");
-        // background-size: 400px;
-        // width: 400px;
         height: 400px;
-        transform: scale(0.9);
-       // background-repeat: no-repeat;
+        transform: scale(0.7);
         transition: transform 0.2s ease;
         animation-name:  logo-animation;
         animation-duration: .8s;
@@ -87,7 +83,7 @@ body{
     }
 }
 
-@media (min-width: 1000px)
+@media (min-width: 1001px)
 {
         
     .logo{

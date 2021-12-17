@@ -67,8 +67,8 @@ body {
     margin-top: -2000px;
     position: relative;
     height: 400px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
@@ -114,7 +114,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   .logo {
     display: block;
     margin-top: -2000px;
