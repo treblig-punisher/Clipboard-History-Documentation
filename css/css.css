@@ -24,29 +24,95 @@ body {
   margin-left: auto;
 }
 
-.logo {
-  display: block;
-  margin-top: 80px;
-  position: relative;
-  background-image: url("/Clipboard_History_App_Name.png");
-  background-size: 400px;
-  width: 400px;
-  height: 400px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  background-repeat: no-repeat;
+@media (max-width: 1000px) {
+  .logo {
+    display: block;
+    margin-top: 80px;
+    position: relative;
+    background-image: url("/Clipboard_History_App_Name.png");
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #9e3dee;
+    -webkit-transition: font-size 0.2s ease;
+    transition: font-size 0.2s ease;
+  }
+  li {
+    color: #fd4cb9;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    -webkit-transition: font-size 0.2s ease, margin 0.2s ease;
+    transition: font-size 0.2s ease, margin 0.2s ease;
+  }
+  section {
+    margin-bottom: 100px;
+  }
 }
 
-h1 {
-  font-size: 2rem;
-  color: #9e3dee;
+@media (min-width: 1000px) {
+  .logo {
+    display: block;
+    margin-top: 80px;
+    position: relative;
+    background-image: url("/Clipboard_History_App_Name.png");
+    background-size: 400px;
+    width: 400px;
+    height: 400px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-repeat: no-repeat;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    margin-bottom: 100px;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #9e3dee;
+    -webkit-transition: font-size 0.2s ease;
+    transition: font-size 0.2s ease;
+  }
+  li {
+    color: #fd4cb9;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    -webkit-transition: font-size 0.2s ease, margin 0.2s ease;
+    transition: font-size 0.2s ease, margin 0.2s ease;
+  }
+  section {
+    margin-bottom: 100px;
+  }
 }
 
-li {
-  color: #fd4cb9;
-  font-size: 1.4rem;
+strong {
+  outline-style: solid;
+  outline-width: 2px;
+  padding: 4px;
+  border-radius: 10px;
+  -webkit-transition: border-radius 0.2s ease, outline 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: border-radius 0.2s ease, outline 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
-section {
-  margin-bottom: 100px;
+strong:hover {
+  color: #070707;
+  outline-width: 0px;
+  border-radius: 10px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #fd4cb9;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
