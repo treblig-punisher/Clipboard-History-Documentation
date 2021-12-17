@@ -1,7 +1,7 @@
 $goalPosition: 80px;
 $startingPosition: -2000px;
 $startingSectionPosition:-1000px;
-$goalSectionPosition: 0px;
+$goalSectionPosition: 0;
 @keyframes logo-animation {
     from{
         margin-top: $startingPosition;
