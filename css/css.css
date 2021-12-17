@@ -66,13 +66,9 @@ body {
     display: block;
     margin-top: -2000px;
     position: relative;
-    background-image: url("/Clipboard_History_App_Name.png");
-    background-size: 400px;
-    width: 400px;
     height: 400px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
-    background-repeat: no-repeat;
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
@@ -123,13 +119,9 @@ body {
     display: block;
     margin-top: -2000px;
     position: relative;
-    background-image: url("/Clipboard_History_App_Name.png");
-    background-size: 400px;
     width: 400px;
-    height: 400px;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    background-repeat: no-repeat;
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
