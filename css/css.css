@@ -1,3 +1,39 @@
+@-webkit-keyframes logo-animation {
+  from {
+    margin-top: -2000px;
+  }
+  to {
+    margin-top: 80px;
+  }
+}
+
+@keyframes logo-animation {
+  from {
+    margin-top: -2000px;
+  }
+  to {
+    margin-top: 80px;
+  }
+}
+
+@-webkit-keyframes section-animation {
+  from {
+    margin-left: -1000px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes section-animation {
+  from {
+    margin-left: -1000px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -27,7 +63,7 @@ body {
 @media (max-width: 1000px) {
   .logo {
     display: block;
-    margin-top: 80px;
+    margin-top: -2000px;
     position: relative;
     background-image: url("/Clipboard_History_App_Name.png");
     background-size: 400px;
@@ -40,6 +76,14 @@ body {
     transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    -webkit-animation-name: logo-animation;
+            animation-name: logo-animation;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   h1 {
     font-size: 2rem;
@@ -50,19 +94,29 @@ body {
   li {
     color: #fd4cb9;
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    line-height: 1.9rem;
     -webkit-transition: font-size 0.2s ease, margin 0.2s ease;
     transition: font-size 0.2s ease, margin 0.2s ease;
   }
   section {
     margin-bottom: 100px;
+    margin-left: -1000px;
+    -webkit-animation-name: section-animation;
+            animation-name: section-animation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 
 @media (min-width: 1000px) {
   .logo {
     display: block;
-    margin-top: 80px;
+    margin-top: -2000px;
     position: relative;
     background-image: url("/Clipboard_History_App_Name.png");
     background-size: 400px;
@@ -76,6 +130,14 @@ body {
     transition: transform 0.2s ease;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     margin-bottom: 100px;
+    -webkit-animation-name: logo-animation;
+            animation-name: logo-animation;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   h1 {
     font-size: 3rem;
@@ -86,12 +148,20 @@ body {
   li {
     color: #fd4cb9;
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     -webkit-transition: font-size 0.2s ease, margin 0.2s ease;
     transition: font-size 0.2s ease, margin 0.2s ease;
   }
   section {
     margin-bottom: 100px;
+    -webkit-animation-name: section-animation;
+            animation-name: section-animation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 
