@@ -10,14 +10,7 @@ $goalSectionPosition: 0;
         margin-top: $goalPosition;
     }
 }
-@keyframes section-animation {
-    from{
-        margin-left: $startingSectionPosition;
-    }
-    to{
-        margin-left: $goalSectionPosition;
-    }
-}
+
 body{
     padding: 0;
     margin: 0;
@@ -43,51 +36,25 @@ body{
 {
         
     .logo{
-        display:block;
-        margin-top: $startingPosition;
-        position: relative;
-        height: 400px;
-        transform: scale(0.6);
-        transition: transform 0.2s ease;
-        animation-name:  logo-animation;
-        animation-duration: .8s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-fill-mode: forwards;
+        --logo-height: 400px;
+        --logo-scale: 0.6;
     }
 
     h1{
-        font-size: 1rem;
-        color: rgb(158, 61, 238);
-        transition: font-size 0.2s ease;
+        --h1-font-size: 1rem;
     }
 
     li{
-        color: rgb(253, 76, 185);
-        font-size: 0.8rem;
-        margin-bottom: 40px;
+        --li-font-size: 0.8rem;
+        --li-margin-bottom: 40px;
         line-height: 1.9rem;
-        transition: font-size 0.2s ease, margin 0.2s ease;
     }
 
     section{
-
-        margin-bottom: 20px;
-        // font-size: 0.8rem;
-
+        --section-margin-bottom: 20px;
     }
     .main-section-wrapper{
-        display: flex;
-        flex-direction: column;
-        
-        // flex-shrink: 2;
-        margin-left: $startingSectionPosition;
-        animation-delay: 0.5s;
-        animation-duration: 1s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-fill-mode: forwards;
-        animation-name: section-animation;
-        // transform: scale(0.8);
-        
+        --main-section-wrapper-left: 0;
     }
 }
 
@@ -95,47 +62,27 @@ body{
 {
         
     .logo{
-        display:block;
-        margin-top: $startingPosition;
-        position: relative;
-        width: 400px;
-        transform: scale(1.2);
-        transition: transform 0.2s ease;
-        margin-bottom: 100px;
-        animation-name:  logo-animation;
-        animation-duration: .8s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-fill-mode: forwards;
+        --logo-width: 400px;
+        --logo-scale: 1.2;
+        --spacing-margin-bottom: 100px;
+        // transform: scale(var(--logo-scale));
     }
 
     h1{
-        font-size: 3rem;
-        color: rgb(158, 61, 238);
-        transition: font-size 0.2s ease;
+        --h1-font-size: 3rem;
     }
 
     li{
-        color: rgb(253, 76, 185);
-        font-size: 1.4rem;
-        margin-bottom: 40px;
-        transition: font-size 0.2s ease, margin 0.2s ease;
+        --li-font-size: 1.4rem;
+        --li-margin-bottom: 40px;
+
     }
 
     section{
-        margin-bottom: 100px;
-        
-
+        --section-margin-bottom: 100px;       
     }
     .main-section-wrapper{
-        position: relative;
-        margin-left: $startingSectionPosition;
-        left: 100px;
-        animation-delay: 0.5s;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-name: section-animation;
-        
+        --main-section-wrapper-left: 100px;     
     }
 }
 
@@ -143,46 +90,25 @@ body{
 {
         
     .logo{
-        display:block;
-        margin-top: $startingPosition;
-        position: relative;
-        width: 400px;
-        transform: scale(1.2);
-        transition: transform 0.2s ease;
-        margin-bottom: 100px;
-        animation-name:  logo-animation;
-        animation-duration: .8s;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-fill-mode: forwards;
+
+        --logo-width: 400px;
+        --logo-scale: 1.2;
+        --spacing-margin-bottom: 100px;
     }
 
     h1{
-        font-size: 3rem;
-        color: rgb(158, 61, 238);
-        transition: font-size 0.2s ease;
+        --h1-font-size: 3rem;
     }
 
     li{
-        color: rgb(253, 76, 185);
-        font-size: 1.4rem;
-        margin-bottom: 40px;
-        transition: font-size 0.2s ease, margin 0.2s ease;
+        --li-font-size: 1.4rem;
+        --li-margin-bottom: 40px;
     }
 
     section{
-        margin-bottom: 100px;
-        
+        --section-margin-bottom: 100px;
+    }
 
-    }
-    .main-section-wrapper{
-        margin-left: $startingSectionPosition;
-        animation-delay: 0.5s;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        animation-name: section-animation;
-        
-    }
 }
 
 
