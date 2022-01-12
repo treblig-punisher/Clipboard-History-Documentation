@@ -17,6 +17,8 @@
 }
 
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Lexend', sans-serif;
@@ -42,6 +44,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0 40px;
+  overflow: hidden;
 }
 
 .logo {
@@ -93,6 +96,24 @@ section {
   margin-bottom: var(--section-margin-bottom);
 }
 
+@-webkit-keyframes section-animation {
+  from {
+    margin-left: var(--starting-section-position);
+  }
+  to {
+    margin-left: var(--goalSectionPosition);
+  }
+}
+
+@keyframes section-animation {
+  from {
+    margin-left: var(--starting-section-position);
+  }
+  to {
+    margin-left: var(--goalSectionPosition);
+  }
+}
+
 .main-section-wrapper {
   --starting-section-position: -3000px;
   --main-section-wrapper-left: 100px;
@@ -110,24 +131,6 @@ section {
           animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   -webkit-animation-name: section-animation;
           animation-name: section-animation;
-}
-
-@-webkit-keyframes section-animation {
-  from {
-    margin-left: var(--starting-section-position);
-  }
-  to {
-    margin-left: var(--goalSectionPosition);
-  }
-}
-
-@keyframes section-animation {
-  from {
-    margin-left: var(--starting-section-position);
-  }
-  to {
-    margin-left: var(--goalSectionPosition);
-  }
 }
 
 @media (max-width: 1000px) {
